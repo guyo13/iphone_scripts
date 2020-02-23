@@ -1,0 +1,20 @@
+#IPhone Scripts
+
+A set of tools to do various stuff to make your life with Iphone easier
+
+
+#Audio to ALAC
+
+-Recursively convert whole directories of audio files and songs to Apple's ALAC format
+-Can convert FLAC or any other audio format
+-Retains directory structure in target location
+-Uses FFMPEG
+
+Requirements:
+-A working ffmpeg installation
+-Python >= 3.5 (also see python requirements file)
+
+Examples:
+
+python3 audio_to_alac.py  --base /path/to/music/dir --target /tmp/outputaudio --format flac --pool-size 15 
+python3 audio_to_alac.py -h
